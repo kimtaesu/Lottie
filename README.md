@@ -18,7 +18,31 @@ History
 ![Facebook Keyframes v.s. airbnb Lottie](http://images.contentful.com/emmiduwd41v7/69RQesDHva8o6QkocmsAgc/0ced02280d3fc56486c5b6a69cfc4afb/android-animation-lottie-libraries.jpg)
 
 
+Usage
+---------
+build.gradle
+```gradle
+dependencies {  
+  compile 'com.airbnb.android:lottie:2.1.0'
+}
+```
+
+activity_main.xml
+```xml
+<com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="hello-world.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+```
+> **NOTE**
+> **Android API 14 (ICS)** 부터 사용해야 합니다.  또 일부 단말에서 OutOfMemory가 발생할 수 있습니다.
+
 **참고** 
 - [Realm Lottie][9] 	
+- [Lottie of Github][10]
 
   [9]: https://news.realm.io/kr/news/lottie-for-android-interactive-animation/
+  [10]:   https://github.com/airbnb/lottie-android
